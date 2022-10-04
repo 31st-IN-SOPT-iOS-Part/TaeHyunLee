@@ -65,6 +65,7 @@ class CreateKakaoAccountViewController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 16, weight: .semibold)
         button.backgroundColor = .systemGray4
+        button.addTarget(self, action: #selector(presentLoginSuccessButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -75,6 +76,8 @@ class CreateKakaoAccountViewController: UIViewController {
         // Do any additional setup after loading the view.
             
         view.backgroundColor = .white
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
         
         let components: [Any] = [titleLabel, emailInputTextField, emailInputTextFieldUnderLine, passwordTextField, passwordTextFieldUnderLine, passwordCheckTextField, passwordCheckTextFieldUnderLine, createAccountButton]
 
@@ -125,7 +128,13 @@ class CreateKakaoAccountViewController: UIViewController {
         
     }
     
-
+    @objc
+    func presentLoginSuccessButton() {
+        let kakaoLoginSuccessVC = KakaoLoginSuccessViewController()
+        kakaoLoginSuccessVC.modalPresentationStyle = .fullScreen
+        present(kakaoLoginSuccessVC, animated: true)
+        self.navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

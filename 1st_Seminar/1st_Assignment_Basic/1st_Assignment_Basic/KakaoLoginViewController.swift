@@ -65,6 +65,7 @@ class KakaoLoginViewController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 16, weight: .semibold)
         button.backgroundColor = .systemGray4
+        button.addTarget(self, action: #selector(presentLoginSuccessButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -75,6 +76,7 @@ class KakaoLoginViewController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 16, weight: .semibold)
         button.backgroundColor = .systemGray4
+        button.addTarget(self, action: #selector(pushCreateAccountButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -142,5 +144,19 @@ class KakaoLoginViewController: UIViewController {
             
         ])
     }
-
+    
+    @objc
+    func presentLoginSuccessButton() {
+        let kakaoLoginSuccessVC = KakaoLoginSuccessViewController()
+        kakaoLoginSuccessVC.modalPresentationStyle = .fullScreen
+        present(kakaoLoginSuccessVC, animated: true)
+    }
+    
+    @objc
+    func pushCreateAccountButton() {
+        let creatKakaoAccountVC = CreateKakaoAccountViewController()
+        self.navigationController?.pushViewController(creatKakaoAccountVC, animated: true)
+    }
+    
+    
 }

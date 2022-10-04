@@ -31,6 +31,7 @@ class KakaoLoginSuccessViewController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 20, weight: .semibold)
         button.backgroundColor = .yellow
+        button.addTarget(self, action: #selector(backButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -52,7 +53,7 @@ class KakaoLoginSuccessViewController: UIViewController {
             welcomeLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 200),
             welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
-            checkButton.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 60),
+            checkButton.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 160),
             checkButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             checkButton.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
             checkButton.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor)
@@ -60,7 +61,10 @@ class KakaoLoginSuccessViewController: UIViewController {
         
     }
     
-
+    @objc
+    func backButton() {
+        dismiss(animated: true)
+    }
     /*
     // MARK: - Navigation
 
