@@ -48,6 +48,7 @@ class KakaoLoginViewController: UIViewController {
     private let passwordTextField = {
         let textField = UITextField()
         textField.placeholder = "비밀번호"
+        textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
@@ -145,10 +146,20 @@ class KakaoLoginViewController: UIViewController {
         ])
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        emailInputTextField.text = ""
+        passwordTextField.text = ""
+    }
+    
     @objc
     func presentLoginSuccessButton() {
         let kakaoLoginSuccessVC = KakaoLoginSuccessViewController()
         kakaoLoginSuccessVC.modalPresentationStyle = .fullScreen
+        
+        if let answer = emailInputTextField.text {
+            kakaoLoginSuccessVC.dataBinding(result: answer)
+        }
+        
         present(kakaoLoginSuccessVC, animated: true)
     }
     
