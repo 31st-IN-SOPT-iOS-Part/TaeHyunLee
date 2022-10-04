@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		EA4F8D5228EBDA8700216891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4F8D5128EBDA8700216891 /* AppDelegate.swift */; };
 		EA4F8D5428EBDA8700216891 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4F8D5328EBDA8700216891 /* SceneDelegate.swift */; };
-		EA4F8D5628EBDA8700216891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4F8D5528EBDA8700216891 /* ViewController.swift */; };
+		EA4F8D5628EBDA8700216891 /* KakaoLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4F8D5528EBDA8700216891 /* KakaoLoginViewController.swift */; };
 		EA4F8D5928EBDA8700216891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4F8D5728EBDA8700216891 /* Main.storyboard */; };
 		EA4F8D5B28EBDA8800216891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4F8D5A28EBDA8800216891 /* Assets.xcassets */; };
 		EA4F8D5E28EBDA8800216891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4F8D5C28EBDA8800216891 /* LaunchScreen.storyboard */; };
+		EA4F8D6628EBFC0600216891 /* CreateKakaoAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4F8D6528EBFC0600216891 /* CreateKakaoAccountViewController.swift */; };
+		EA4F8D6828EC0D0800216891 /* KakaoLoginSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4F8D6728EC0D0800216891 /* KakaoLoginSuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA4F8D4E28EBDA8700216891 /* 1st_Assignment_Basic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1st_Assignment_Basic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4F8D5128EBDA8700216891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA4F8D5328EBDA8700216891 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA4F8D5528EBDA8700216891 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA4F8D5528EBDA8700216891 /* KakaoLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginViewController.swift; sourceTree = "<group>"; };
 		EA4F8D5828EBDA8700216891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA4F8D5A28EBDA8800216891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA4F8D5D28EBDA8800216891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA4F8D5F28EBDA8800216891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA4F8D6528EBFC0600216891 /* CreateKakaoAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateKakaoAccountViewController.swift; sourceTree = "<group>"; };
+		EA4F8D6728EC0D0800216891 /* KakaoLoginSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginSuccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				EA4F8D5128EBDA8700216891 /* AppDelegate.swift */,
 				EA4F8D5328EBDA8700216891 /* SceneDelegate.swift */,
-				EA4F8D5528EBDA8700216891 /* ViewController.swift */,
+				EA4F8D5528EBDA8700216891 /* KakaoLoginViewController.swift */,
+				EA4F8D6528EBFC0600216891 /* CreateKakaoAccountViewController.swift */,
+				EA4F8D6728EC0D0800216891 /* KakaoLoginSuccessViewController.swift */,
 				EA4F8D5728EBDA8700216891 /* Main.storyboard */,
 				EA4F8D5A28EBDA8800216891 /* Assets.xcassets */,
 				EA4F8D5C28EBDA8800216891 /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA4F8D5628EBDA8700216891 /* ViewController.swift in Sources */,
+				EA4F8D6628EBFC0600216891 /* CreateKakaoAccountViewController.swift in Sources */,
+				EA4F8D6828EC0D0800216891 /* KakaoLoginSuccessViewController.swift in Sources */,
+				EA4F8D5628EBDA8700216891 /* KakaoLoginViewController.swift in Sources */,
 				EA4F8D5228EBDA8700216891 /* AppDelegate.swift in Sources */,
 				EA4F8D5428EBDA8700216891 /* SceneDelegate.swift in Sources */,
 			);

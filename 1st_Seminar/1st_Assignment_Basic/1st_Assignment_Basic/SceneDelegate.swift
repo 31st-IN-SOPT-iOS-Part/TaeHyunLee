@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
             window.overrideUserInterfaceStyle = UIUserInterfaceStyle.light
             
-            let rootVC = ViewController()
+            let rootVC = KakaoLoginSuccessViewController()
             
             window.rootViewController = rootVC
             window.makeKeyAndVisible()
