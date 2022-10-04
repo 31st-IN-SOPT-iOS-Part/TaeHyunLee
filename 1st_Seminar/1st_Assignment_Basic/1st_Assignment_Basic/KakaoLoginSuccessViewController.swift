@@ -65,6 +65,14 @@ class KakaoLoginSuccessViewController: UIViewController {
     func backButton() {
         dismiss(animated: true)
     }
+    
+    func dataBinding(result: String) {
+        welcomeLabel.text = """
+        \(result)님
+        환영합니다
+        """
+    }
+    
     /*
     // MARK: - Navigation
 

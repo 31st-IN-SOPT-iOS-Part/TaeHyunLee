@@ -34,6 +34,7 @@ class CreateKakaoAccountViewController: UIViewController {
     private let passwordTextField = {
         let textField = UITextField()
         textField.placeholder = "비밀번호"
+        textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
@@ -47,7 +48,8 @@ class CreateKakaoAccountViewController: UIViewController {
     
     private let passwordCheckTextField = {
         let textField = UITextField()
-        textField.placeholder = "비밀번호"
+        textField.placeholder = "비밀번호확인"
+        textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
@@ -132,6 +134,11 @@ class CreateKakaoAccountViewController: UIViewController {
     func presentLoginSuccessButton() {
         let kakaoLoginSuccessVC = KakaoLoginSuccessViewController()
         kakaoLoginSuccessVC.modalPresentationStyle = .fullScreen
+        
+        if let answer = emailInputTextField.text {
+            kakaoLoginSuccessVC.dataBinding(result: answer)
+        }
+        
         present(kakaoLoginSuccessVC, animated: true)
         self.navigationController?.popViewController(animated: true)
     }
