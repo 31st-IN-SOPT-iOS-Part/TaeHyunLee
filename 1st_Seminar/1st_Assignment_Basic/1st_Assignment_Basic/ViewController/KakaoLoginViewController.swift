@@ -9,6 +9,7 @@ import UIKit
 
 class KakaoLoginViewController: UIViewController {
     
+    // MARK: - Property
     private let titleLabel = {
         let label = UILabel()
         label.text = "카카오톡을 시작합니다"
@@ -60,7 +61,7 @@ class KakaoLoginViewController: UIViewController {
         return label
     }()
     
-    private let loginButton = {
+    private lazy var loginButton = {
         let button = UIButton()
         button.setTitle("카카오계정 로그인", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -71,7 +72,7 @@ class KakaoLoginViewController: UIViewController {
         return button
     }()
     
-    private let createAccountButton = {
+    private lazy var createAccountButton = {
         let button = UIButton()
         button.setTitle("새로운 카카오계정 만들기", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -90,7 +91,7 @@ class KakaoLoginViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -145,12 +146,13 @@ class KakaoLoginViewController: UIViewController {
             
         ])
     }
-    
-    override func viewDidDisappear(_ animated: Bool) {
+    // MARK: - Method
+    override func viewWillAppear(_ animated: Bool) {
         emailInputTextField.text = ""
         passwordTextField.text = ""
     }
     
+    // MARK: - objc
     @objc
     func presentLoginSuccessButton() {
         let kakaoLoginSuccessVC = KakaoLoginSuccessViewController()
@@ -169,5 +171,7 @@ class KakaoLoginViewController: UIViewController {
         self.navigationController?.pushViewController(creatKakaoAccountVC, animated: true)
     }
     
-    
+    deinit {
+        print("deinit kakaoLiogin")
+    }
 }

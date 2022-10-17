@@ -10,8 +10,10 @@ import SnapKit
 
 final class FriendListViewController: UIViewController {
     
+    // MARK: - Data
     var name: String?
     
+    // MARK: - Property
     private let friendStack = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
@@ -21,12 +23,13 @@ final class FriendListViewController: UIViewController {
     private let friendLabel = UILabel()
     private let friendLabelImage = UIImageView()
     
-    private let friendProfileButton = {
+    private lazy var friendProfileButton = {
         let UIButton = UIButton()
         UIButton.addTarget(self, action: #selector(presentFriendProfile), for: .touchUpInside)
         return UIButton
     }()
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,24 +37,27 @@ final class FriendListViewController: UIViewController {
         config()
     }
     
+    // MARK: - objc
     @objc
     func presentFriendProfile() {
         let profileVC = ProfileViewController()
         profileVC.modalPresentationStyle = .fullScreen
-        
+
         if let name = name {
             profileVC.dataBinding(result: name)
         }
-        
+
         present(profileVC, animated: true)
     }
     
+    // MARK: - Method
     func dataBinding(result: String) {
         self.name = result
     }
     
 }
 
+// MARK: - Extension
 extension FriendListViewController {
     
     func layout() {
@@ -67,14 +73,14 @@ extension FriendListViewController {
         }
         
         friendStack.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(13)
-            $0.leading.equalTo(view.layoutMarginsGuide.snp.leading)
-            $0.trailing.equalTo(view.snp.trailing).offset(-305)
+            $0.top.equalTo(view.safeAreaLayoutGuide).offset(13)
+            $0.leading.equalTo(view.layoutMarginsGuide)
+            $0.trailing.equalTo(view).offset(-305)
             $0.height.equalTo(18)
         }
         
         friendProfileButton.snp.makeConstraints {
-            $0.leading.equalTo(friendStack.snp.leading)
+            $0.leading.equalTo(friendStack)
             $0.top.equalTo(friendStack.snp.bottom).offset(15)
             $0.width.equalTo(59)
             $0.height.equalTo(58)
@@ -93,3 +99,6 @@ extension FriendListViewController {
     }
     
 }
+
+
+// data 

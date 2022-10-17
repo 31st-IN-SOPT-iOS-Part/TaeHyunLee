@@ -9,6 +9,7 @@ import UIKit
 
 class CreateKakaoAccountViewController: UIViewController {
     
+    // MARK: - Property
     private let titleLabel = {
         let label = UILabel()
         label.text = "카카오톡을 시작합니다"
@@ -61,7 +62,7 @@ class CreateKakaoAccountViewController: UIViewController {
         return label
     }()
     
-    private let createAccountButton = {
+    private lazy var createAccountButton = {
         let button = UIButton()
         button.setTitle("새로운 카카오계정 만들기", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -72,6 +73,7 @@ class CreateKakaoAccountViewController: UIViewController {
         return button
     }()
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -130,6 +132,7 @@ class CreateKakaoAccountViewController: UIViewController {
         
     }
     
+    // MARK: - objc
     @objc
     func presentLoginSuccessButton() {
         let kakaoLoginSuccessVC = KakaoLoginSuccessViewController()
