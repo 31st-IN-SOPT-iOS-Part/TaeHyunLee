@@ -25,7 +25,7 @@ class KakaoLoginSuccessViewController: UIViewController {
         return label
     }()
     
-    private let checkButton = {
+    private lazy var checkButton = {
         let button = UIButton()
         button.setTitle("확인", for: .normal)
         button.setTitleColor(.black, for: .normal)

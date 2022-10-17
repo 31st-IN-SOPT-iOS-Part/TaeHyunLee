@@ -60,7 +60,7 @@ class KakaoLoginViewController: UIViewController {
         return label
     }()
     
-    private let loginButton = {
+    private lazy var loginButton = {
         let button = UIButton()
         button.setTitle("카카오계정 로그인", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -71,7 +71,7 @@ class KakaoLoginViewController: UIViewController {
         return button
     }()
     
-    private let createAccountButton = {
+    private lazy var createAccountButton = {
         let button = UIButton()
         button.setTitle("새로운 카카오계정 만들기", for: .normal)
         button.setTitleColor(.black, for: .normal)

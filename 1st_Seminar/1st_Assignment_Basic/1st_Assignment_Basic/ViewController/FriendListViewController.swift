@@ -21,7 +21,7 @@ final class FriendListViewController: UIViewController {
     private let friendLabel = UILabel()
     private let friendLabelImage = UIImageView()
     
-    private let friendProfileButton = {
+    private lazy var friendProfileButton = {
         let UIButton = UIButton()
         UIButton.addTarget(self, action: #selector(presentFriendProfile), for: .touchUpInside)
         return UIButton
@@ -93,3 +93,6 @@ extension FriendListViewController {
     }
     
 }
+
+
+// data 

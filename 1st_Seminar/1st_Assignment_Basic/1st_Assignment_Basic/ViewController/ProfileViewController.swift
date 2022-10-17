@@ -9,7 +9,7 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
-    private let backButton = {
+    private lazy var backButton = {
         let button = UIButton()
         button.addTarget(self, action: #selector(dismissView), for: .touchUpInside)
         return button
