@@ -31,7 +31,7 @@ class KakaoLoginSuccessViewController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 20, weight: .semibold)
         button.backgroundColor = .yellow
-        button.addTarget(self, action: #selector(backButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(moveToFriendListButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -62,25 +62,24 @@ class KakaoLoginSuccessViewController: UIViewController {
     }
     
     @objc
-    func backButton() {
-        dismiss(animated: true)
+    func moveToFriendListButton() {
+//      MARK: - 도전과제 root view change
+        let friendListVC = FriendListViewController()
+        let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
+        
+        if let result = name {
+            friendListVC.dataBinding(result: result)
+        }
+
+        sceneDelegate.window?.rootViewController = friendListVC
     }
     
     func dataBinding(result: String) {
+        name = result
+        
         welcomeLabel.text = """
         \(result)님
         환영합니다
         """
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
