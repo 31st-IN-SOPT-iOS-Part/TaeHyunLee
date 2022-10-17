@@ -9,6 +9,7 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
+    //MARK: - Property
     private lazy var backButton = {
         let button = UIButton()
         button.addTarget(self, action: #selector(dismissView), for: .touchUpInside)
@@ -34,12 +35,25 @@ final class ProfileViewController: UIViewController {
         return stack
     }()
     
-    private let chattingButton = UIButton()
+    private lazy var chattingButton = {
+        let button = UIButton()
+        button.addTarget(self, action: #selector(chattingAction), for: .touchUpInside)
+        return button
+    }()
     
-    private let editButton = UIButton()
+    private lazy var editButton = {
+        let button = UIButton()
+        button.addTarget(self, action: #selector(editAction), for: .touchUpInside)
+        return button
+    }()
     
-    private let kakaoStoryButton = UIButton()
+    private lazy var kakaoStoryButton = {
+        let button = UIButton()
+        button.addTarget(self, action: #selector(kakaoStoryAction), for: .touchUpInside)
+        return button
+    }()
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,17 +61,35 @@ final class ProfileViewController: UIViewController {
         config()
     }
     
+    // MARK: - objc
     @objc
     func dismissView() {
         dismiss(animated: true)
     }
     
+    @objc
+    func chattingAction() {
+        print("tap chatting")
+    }
+    
+    @objc
+    func editAction() {
+        print("tap edit")
+    }
+    
+    @objc
+    func kakaoStoryAction() {
+        print("tap KakaoStory")
+    }
+    
+    // MARK: - Method
     func dataBinding(result: String) {
         MyName.text = "\(result)"
     }
     
 }
 
+// MARK: - extension
 extension ProfileViewController {
     
     func layout() {
@@ -75,14 +107,14 @@ extension ProfileViewController {
         }
         
         backButton.snp.makeConstraints {
-            $0.leading.equalTo(view.layoutMarginsGuide.snp.leading)
-            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(14)
+            $0.leading.equalTo(view.layoutMarginsGuide)
+            $0.top.equalTo(view.safeAreaLayoutGuide).offset(14)
             $0.width.equalTo(14)
             $0.height.equalTo(14)
         }
         
         profileStack.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(400)
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(220)
             $0.centerX.equalToSuperview()
             $0.width.equalTo(97)
             $0.height.equalTo(125)
