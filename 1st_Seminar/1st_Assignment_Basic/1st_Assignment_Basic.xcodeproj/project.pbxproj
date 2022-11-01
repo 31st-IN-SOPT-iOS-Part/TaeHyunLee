@@ -20,6 +20,7 @@
 		EA70612128F47EA700F42BE1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EA70612028F47EA700F42BE1 /* SnapKit */; };
 		EA70612328F47F4700F42BE1 /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70612228F47F4700F42BE1 /* FriendListViewController.swift */; };
 		EA70612928F4906B00F42BE1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70612828F4906B00F42BE1 /* ProfileViewController.swift */; };
+		EABB16E32910F31D00C5CD03 /* FriendListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABB16E22910F31D00C5CD03 /* FriendListHeaderView.swift */; };
 		EAD507DE290F95DA0087BEEF /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = EAD507DD290F95DA0087BEEF /* Then */; };
 		EAD507E9290F96FD0087BEEF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD507E8290F96FD0087BEEF /* UIView+Extension.swift */; };
 		EAD507EC290F99F00087BEEF /* KakaoLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD507EB290F99F00087BEEF /* KakaoLoginViewModel.swift */; };
@@ -28,6 +29,13 @@
 		EAD507F4290F9ECD0087BEEF /* KakaoLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD507F3290F9ECD0087BEEF /* KakaoLoginModel.swift */; };
 		EAD507F7290FAFF80087BEEF /* CreateKakaoAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD507F6290FAFF70087BEEF /* CreateKakaoAccountModel.swift */; };
 		EAD507FA290FB0200087BEEF /* CreateKakaoAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD507F9290FB0200087BEEF /* CreateKakaoAccountViewModel.swift */; };
+		EAD507FC290FE1520087BEEF /* KakaoTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD507FB290FE1520087BEEF /* KakaoTabbarController.swift */; };
+		EAD50803290FE2A50087BEEF /* PhotoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD50802290FE2A50087BEEF /* PhotoGridViewController.swift */; };
+		EAD50806290FE2B80087BEEF /* SharpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD50805290FE2B80087BEEF /* SharpViewController.swift */; };
+		EAD50809290FE2D00087BEEF /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD50808290FE2D00087BEEF /* ShopViewController.swift */; };
+		EAD5080C290FE2E10087BEEF /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5080B290FE2E10087BEEF /* MoreViewController.swift */; };
+		EAD5080F29100E060087BEEF /* FriendListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5080E29100E060087BEEF /* FriendListModel.swift */; };
+		EAD5081229100EEC0087BEEF /* FriendListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5081129100EEC0087BEEF /* FriendListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,11 +52,19 @@
 		EA4F8D6728EC0D0800216891 /* KakaoLoginSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginSuccessViewController.swift; sourceTree = "<group>"; };
 		EA70612228F47F4700F42BE1 /* FriendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
 		EA70612828F4906B00F42BE1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EABB16E22910F31D00C5CD03 /* FriendListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListHeaderView.swift; sourceTree = "<group>"; };
 		EAD507E8290F96FD0087BEEF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		EAD507EB290F99F00087BEEF /* KakaoLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginViewModel.swift; sourceTree = "<group>"; };
 		EAD507F3290F9ECD0087BEEF /* KakaoLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginModel.swift; sourceTree = "<group>"; };
 		EAD507F6290FAFF70087BEEF /* CreateKakaoAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateKakaoAccountModel.swift; sourceTree = "<group>"; };
 		EAD507F9290FB0200087BEEF /* CreateKakaoAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateKakaoAccountViewModel.swift; sourceTree = "<group>"; };
+		EAD507FB290FE1520087BEEF /* KakaoTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTabbarController.swift; sourceTree = "<group>"; };
+		EAD50802290FE2A50087BEEF /* PhotoGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridViewController.swift; sourceTree = "<group>"; };
+		EAD50805290FE2B80087BEEF /* SharpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpViewController.swift; sourceTree = "<group>"; };
+		EAD50808290FE2D00087BEEF /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		EAD5080B290FE2E10087BEEF /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		EAD5080E29100E060087BEEF /* FriendListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListModel.swift; sourceTree = "<group>"; };
+		EAD5081129100EEC0087BEEF /* FriendListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +113,16 @@
 			children = (
 				EA4F8D5128EBDA8700216891 /* AppDelegate.swift */,
 				EA4F8D5328EBDA8700216891 /* SceneDelegate.swift */,
+				EAD507FB290FE1520087BEEF /* KakaoTabbarController.swift */,
 				EA3B4B4E28F539BF00AD9AE8 /* Extension */,
 				EAD507DF290F95ED0087BEEF /* KakaoLoginScene */,
 				EAD507E0290F960D0087BEEF /* CreateKakaoAccountScene */,
 				EAD507E1290F96340087BEEF /* KakaoLoginSuccessScene */,
 				EAD507E2290F96590087BEEF /* FriendListScene */,
-				EA70612728F489B200F42BE1 /* ProfileScene */,
+				EAD507FD290FE1BE0087BEEF /* PhotoGridScene */,
+				EAD507FE290FE1EA0087BEEF /* SharpScene */,
+				EAD507FF290FE20A0087BEEF /* ShopScene */,
+				EAD50800290FE21B0087BEEF /* MoreScene */,
 				EA4F8D5728EBDA8700216891 /* Main.storyboard */,
 				EA4F8D5A28EBDA8800216891 /* Assets.xcassets */,
 				EA4F8D5C28EBDA8800216891 /* LaunchScreen.storyboard */,
@@ -117,6 +137,14 @@
 				EAD507E7290F96D90087BEEF /* VC */,
 			);
 			path = ProfileScene;
+			sourceTree = "<group>";
+		};
+		EABB16E12910F2E400C5CD03 /* FriendListHeaderTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EABB16E22910F31D00C5CD03 /* FriendListHeaderView.swift */,
+			);
+			path = FriendListHeaderTableViewCell;
 			sourceTree = "<group>";
 		};
 		EAD507DF290F95ED0087BEEF /* KakaoLoginScene */ = {
@@ -150,7 +178,11 @@
 		EAD507E2290F96590087BEEF /* FriendListScene */ = {
 			isa = PBXGroup;
 			children = (
+				EAD5080D29100DEB0087BEEF /* Model */,
 				EAD507E6290F96D20087BEEF /* VC */,
+				EAD5081029100E9F0087BEEF /* FriendListTableViewCell */,
+				EABB16E12910F2E400C5CD03 /* FriendListHeaderTableViewCell */,
+				EA70612728F489B200F42BE1 /* ProfileScene */,
 			);
 			path = FriendListScene;
 			sourceTree = "<group>";
@@ -225,6 +257,86 @@
 				EAD507F9290FB0200087BEEF /* CreateKakaoAccountViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EAD507FD290FE1BE0087BEEF /* PhotoGridScene */ = {
+			isa = PBXGroup;
+			children = (
+				EAD50801290FE28B0087BEEF /* VC */,
+			);
+			path = PhotoGridScene;
+			sourceTree = "<group>";
+		};
+		EAD507FE290FE1EA0087BEEF /* SharpScene */ = {
+			isa = PBXGroup;
+			children = (
+				EAD50804290FE2AB0087BEEF /* VC */,
+			);
+			path = SharpScene;
+			sourceTree = "<group>";
+		};
+		EAD507FF290FE20A0087BEEF /* ShopScene */ = {
+			isa = PBXGroup;
+			children = (
+				EAD50807290FE2BD0087BEEF /* VC */,
+			);
+			path = ShopScene;
+			sourceTree = "<group>";
+		};
+		EAD50800290FE21B0087BEEF /* MoreScene */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5080A290FE2D40087BEEF /* VC */,
+			);
+			path = MoreScene;
+			sourceTree = "<group>";
+		};
+		EAD50801290FE28B0087BEEF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EAD50802290FE2A50087BEEF /* PhotoGridViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EAD50804290FE2AB0087BEEF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EAD50805290FE2B80087BEEF /* SharpViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EAD50807290FE2BD0087BEEF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EAD50808290FE2D00087BEEF /* ShopViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EAD5080A290FE2D40087BEEF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5080B290FE2E10087BEEF /* MoreViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EAD5080D29100DEB0087BEEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5080E29100E060087BEEF /* FriendListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAD5081029100E9F0087BEEF /* FriendListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5081129100EEC0087BEEF /* FriendListTableViewCell.swift */,
+			);
+			path = FriendListTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,18 +424,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD507EC290F99F00087BEEF /* KakaoLoginViewModel.swift in Sources */,
+				EAD50806290FE2B80087BEEF /* SharpViewController.swift in Sources */,
 				EA4F8D6628EBFC0600216891 /* CreateKakaoAccountViewController.swift in Sources */,
+				EAD5081229100EEC0087BEEF /* FriendListTableViewCell.swift in Sources */,
 				EA4F8D6828EC0D0800216891 /* KakaoLoginSuccessViewController.swift in Sources */,
+				EABB16E32910F31D00C5CD03 /* FriendListHeaderView.swift in Sources */,
+				EAD50809290FE2D00087BEEF /* ShopViewController.swift in Sources */,
 				EA70612328F47F4700F42BE1 /* FriendListViewController.swift in Sources */,
 				EAD507F4290F9ECD0087BEEF /* KakaoLoginModel.swift in Sources */,
 				EAD507E9290F96FD0087BEEF /* UIView+Extension.swift in Sources */,
 				EA70612928F4906B00F42BE1 /* ProfileViewController.swift in Sources */,
+				EAD5080C290FE2E10087BEEF /* MoreViewController.swift in Sources */,
 				EA4F8D5628EBDA8700216891 /* KakaoLoginViewController.swift in Sources */,
 				EA3B4B5028F539D600AD9AE8 /* UIButton+Extension.swift in Sources */,
 				EAD507F7290FAFF80087BEEF /* CreateKakaoAccountModel.swift in Sources */,
 				EAD507FA290FB0200087BEEF /* CreateKakaoAccountViewModel.swift in Sources */,
 				EA4F8D5228EBDA8700216891 /* AppDelegate.swift in Sources */,
+				EAD5080F29100E060087BEEF /* FriendListModel.swift in Sources */,
 				EA4F8D5428EBDA8700216891 /* SceneDelegate.swift in Sources */,
+				EAD507FC290FE1520087BEEF /* KakaoTabbarController.swift in Sources */,
+				EAD50803290FE2A50087BEEF /* PhotoGridViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
