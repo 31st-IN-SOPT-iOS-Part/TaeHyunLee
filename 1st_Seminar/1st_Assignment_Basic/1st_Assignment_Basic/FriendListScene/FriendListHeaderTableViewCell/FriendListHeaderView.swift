@@ -26,7 +26,7 @@ class FriendListHeaderView: UITableViewHeaderFooterView {
         $0.text = "상태메세지는 여기에..."
         $0.textColor = .gray
     }
-    
+        
     private let divider = UILabel().then {
         $0.backgroundColor = .systemGray6
     }

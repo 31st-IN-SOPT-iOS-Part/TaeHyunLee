@@ -25,6 +25,8 @@
 		EA9DD947291289D000EC1414 /* PlusGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9DD946291289D000EC1414 /* PlusGridCollectionViewCell.swift */; };
 		EABB16E32910F31D00C5CD03 /* FriendListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABB16E22910F31D00C5CD03 /* FriendListHeaderView.swift */; };
 		EABB16E52911411C00C5CD03 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABB16E42911411C00C5CD03 /* UIImage+Extension.swift */; };
+		EAC5E15929268CDE0055B9EB /* FriendListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5E15829268CDE0055B9EB /* FriendListViewModel.swift */; };
+		EAC5E15C2926A2950055B9EB /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = EAC5E15B2926A2950055B9EB /* RxDataSources */; };
 		EAD507DE290F95DA0087BEEF /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = EAD507DD290F95DA0087BEEF /* Then */; };
 		EAD507E9290F96FD0087BEEF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD507E8290F96FD0087BEEF /* UIView+Extension.swift */; };
 		EAD507EC290F99F00087BEEF /* KakaoLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD507EB290F99F00087BEEF /* KakaoLoginViewModel.swift */; };
@@ -61,6 +63,7 @@
 		EA9DD946291289D000EC1414 /* PlusGridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusGridCollectionViewCell.swift; sourceTree = "<group>"; };
 		EABB16E22910F31D00C5CD03 /* FriendListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListHeaderView.swift; sourceTree = "<group>"; };
 		EABB16E42911411C00C5CD03 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		EAC5E15829268CDE0055B9EB /* FriendListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListViewModel.swift; sourceTree = "<group>"; };
 		EAD507E8290F96FD0087BEEF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		EAD507EB290F99F00087BEEF /* KakaoLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginViewModel.swift; sourceTree = "<group>"; };
 		EAD507F3290F9ECD0087BEEF /* KakaoLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginModel.swift; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 				EA0EA985290AF1290095A001 /* SwiftyColor in Frameworks */,
 				EA70612128F47EA700F42BE1 /* SnapKit in Frameworks */,
 				EAD507F1290F9B1C0087BEEF /* RxSwift in Frameworks */,
+				EAC5E15C2926A2950055B9EB /* RxDataSources in Frameworks */,
 				EAD507EF290F9B1C0087BEEF /* RxCocoa in Frameworks */,
 				EAD507DE290F95DA0087BEEF /* Then in Frameworks */,
 			);
@@ -181,6 +185,14 @@
 			path = FriendListHeaderTableViewCell;
 			sourceTree = "<group>";
 		};
+		EAC5E15729268CC00055B9EB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5E15829268CDE0055B9EB /* FriendListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EAD507DF290F95ED0087BEEF /* KakaoLoginScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD5080D29100DEB0087BEEF /* Model */,
+				EAC5E15729268CC00055B9EB /* ViewModel */,
 				EAD507E6290F96D20087BEEF /* VC */,
 				EAD5081029100E9F0087BEEF /* FriendListTableViewCell */,
 				EABB16E12910F2E400C5CD03 /* FriendListHeaderTableViewCell */,
@@ -397,6 +410,7 @@
 				EAD507DD290F95DA0087BEEF /* Then */,
 				EAD507EE290F9B1C0087BEEF /* RxCocoa */,
 				EAD507F0290F9B1C0087BEEF /* RxSwift */,
+				EAC5E15B2926A2950055B9EB /* RxDataSources */,
 			);
 			productName = 1st_Assignment_Basic;
 			productReference = EA4F8D4E28EBDA8700216891 /* 1st_Assignment_Basic.app */;
@@ -431,6 +445,7 @@
 				EA0EA983290AF1290095A001 /* XCRemoteSwiftPackageReference "SwiftyColor" */,
 				EAD507DC290F95DA0087BEEF /* XCRemoteSwiftPackageReference "Then" */,
 				EAD507ED290F9B1C0087BEEF /* XCRemoteSwiftPackageReference "RxSwift" */,
+				EAC5E15A2926A2950055B9EB /* XCRemoteSwiftPackageReference "RxDataSources" */,
 			);
 			productRefGroup = EA4F8D4F28EBDA8700216891 /* Products */;
 			projectDirPath = "";
@@ -473,6 +488,7 @@
 				EA70612928F4906B00F42BE1 /* ProfileViewController.swift in Sources */,
 				EA9DD947291289D000EC1414 /* PlusGridCollectionViewCell.swift in Sources */,
 				EAD5080C290FE2E10087BEEF /* MoreViewController.swift in Sources */,
+				EAC5E15929268CDE0055B9EB /* FriendListViewModel.swift in Sources */,
 				EA4F8D5628EBDA8700216891 /* KakaoLoginViewController.swift in Sources */,
 				EA3B4B5028F539D600AD9AE8 /* UIButton+Extension.swift in Sources */,
 				EAD507F7290FAFF80087BEEF /* CreateKakaoAccountModel.swift in Sources */,
@@ -719,6 +735,14 @@
 				kind = branch;
 			};
 		};
+		EAC5E15A2926A2950055B9EB /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		EAD507DC290F95DA0087BEEF /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
@@ -747,6 +771,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EA70611F28F47EA600F42BE1 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		EAC5E15B2926A2950055B9EB /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAC5E15A2926A2950055B9EB /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
 		};
 		EAD507DD290F95DA0087BEEF /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
